@@ -1,0 +1,29 @@
+extends ../layouts/account.pug
+include ../mixins/inner-more.pug
+
+block title
+    title Đổi mật khẩu
+block main 
+    h2.inner-title Đổi mật khẩu
+    p.inner-desc Vui lòng nhập mật khẩu để tiếp tục
+    
+    form.inner-form(action="#")
+        .inner-group 
+            label(for="password" class="inner-label") Mật khẩu mới
+            input(
+                type="password"
+                name="password"
+                class="inner-control"
+                id="password" 
+            ) 
+        .inner-group 
+            label(for="password" class="inner-label") Xác nhận mật khẩu
+            input(
+                type="password"
+                name="password"
+                class="inner-control"
+                id="password" 
+            ) 
+        button(class="inner-button") Thay đổi
+
+    +inner-more("Bạn đã nhớ mật khẩu?", "Đăng nhập")

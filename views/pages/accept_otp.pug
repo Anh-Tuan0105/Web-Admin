@@ -1,0 +1,22 @@
+extends ../layouts/account.pug
+include ../mixins/inner-more.pug
+
+block title 
+    title Nhập mã OTP
+block main 
+    h2.inner-title Nhập mã OTP
+    p.inner-desc Vui lòng nhập mã OTP để tiếp tục
+    
+    form.inner-form(action="#")
+        .inner-group 
+            label(for="number" class="inner-label") Mã OTP
+            input(
+                type="number"
+                name="email"
+                class="inner-control"
+                id="number" 
+                placeholder="Ví dụ: 123456"
+            )
+        button(class="inner-button") Xác thực
+    
+    +inner-more("Bạn đã nhớ mật khẩu?", "Đăng nhập")
