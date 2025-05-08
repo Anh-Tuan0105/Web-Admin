@@ -289,6 +289,10 @@ input{
     object-fit: cover;
 }
 
+.header .inner-account .inner-text{
+    flex: 1;
+}
+
 .header .inner-account .inner-text .inner-name{
     font-weight: 700;
     font-size: 14px;
@@ -302,6 +306,33 @@ input{
     font-size: 12px;
     line-height: 100%;
     color: #565656;
+}
+
+.header .inner-button-menu{
+    display: none;
+}
+
+@media (max-width: 991.98px){
+    .header .inner-button-menu{
+        display: inline-block;
+        font-size: 24px;
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 575.98px){
+    .header .inner-logo{
+        width: auto;
+        margin-left: 15px;
+    }
+
+    .header .inner-wrap{
+        margin-right: 15px;
+        gap: 20px;
+    }
 }
 /* End Header */
 
@@ -372,6 +403,12 @@ input{
 .sider .inner-menu li a.inner-logout{
     color: #F93C65;
 }
+
+@media(max-width: 991.98px){
+    .sider{
+        display: none;
+    }
+}
 /* End Sider */
 
 /* Main */
@@ -383,6 +420,19 @@ input{
     top: 70px;
     left: 240px;
     padding: 30px;
+}
+
+@media(max-width: 991.98px){
+    .main{
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media(max-width: 575.98px){
+    .main{
+        padding: 30px 15px;
+    }
 }
 /* End Main */
 
@@ -440,6 +490,18 @@ input{
     color: var(--color-text);
     letter-spacing: 1px;
 }
+
+@media (max-width: 1199.98px){
+    .section-1{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 767.98px){
+    .section-1{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 /* End Section-1 */
 
 /* Section-2 */
@@ -452,8 +514,10 @@ input{
 
 .section-2 .inner-head{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
     margin-bottom: 32px;
 }
 
@@ -478,6 +542,7 @@ input{
 .section-2 .inner-chart{
     height: 273px;
 }
+
 /* End Section-2 */
 
 /* Section-3 */
@@ -500,9 +565,27 @@ input{
 /* End Section-3 */
 
 /* Table-1 */
+.table-1{
+    overflow-x: auto;
+}
+
+.table-1::-webkit-scrollbar
+{
+    border-radius: 10px;
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.table-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #ddd;
+}
+
 .table-1 table{
     width: 100%;
     border-collapse: collapse;
+    min-width: 1076px;
 }
 .table-1 table thead tr th{
     background-color: #F1F4F9;
@@ -619,5 +702,301 @@ input{
     color: #EF3826;
     background-color: rgba(239, 55, 38, 0.2);
 }
-
 /* End Badge */
+
+/* Section 4 */
+.section-4{
+    margin-bottom: 15px;
+}
+
+.section-4 .inner-wrap{
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 0.6px solid #D5D5D5;
+    background-color: #FFFF;
+    border-radius: 14px;
+}
+
+.section-4 .inner-item{
+    padding: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border-right: 0.3px solid rgba(151, 151, 151, 0.287);
+    font-weight: 700;
+    font-size: 14px;
+    color: #202224;
+}
+
+.section-4 .inner-item:last-child{
+    border-right: 0;
+}
+
+.section-4 .inner-item i{
+    font-size: 22px;
+}
+
+.section-4 .inner-item select,
+.section-4 .inner-item input[type="date"]{
+    border: 0;
+    outline: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.section-4 .inner-item input[type="date"]{
+    width: 110px;
+}
+
+.section-4 .inner-item.inner-reset{
+    color: #EA0234;
+    cursor: pointer;
+}
+
+.section-4 .inner-item.inner-reset i{
+    font-size: 15px;
+}
+
+@media (max-width: 991.98px){
+    .section-4 .inner-item{
+        padding: 15px;
+    }
+}
+/* End Section 4 */
+
+/* Section 5 */
+.section-5{
+    margin-bottom: 30px;
+}
+
+.section-5 .inner-wrap{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-5 .inner-change-status{
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 0.6px solid #D5D5D5;
+    background-color: #FFFF;
+    border-radius: 14px;
+}
+
+.section-5 .inner-change-status .inner-item{
+    padding: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border-right: 0.3px solid rgba(151, 151, 151, 0.287);
+    font-weight: 700;
+    font-size: 14px;
+    color: #202224;
+}
+
+.section-5 .inner-change-status .inner-item:last-child{
+    border-right: 0;
+}
+
+.section-5 .inner-change-status .inner-item select{
+    border: 0;
+    outline: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.section-5 .inner-change-status .inner-item button{
+    background-color: transparent;
+    border: 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: #EA0234;
+    cursor: pointer;
+}
+
+.section-5 .inner-search{
+    border: 1px solid #E2E2E2;
+    background-color: #FFF;
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+    max-width: 366px;
+    width: 100%;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.section-5 .inner-search i{
+    font-size: 20px;
+}
+
+.section-5 .inner-search input{
+    font-size: 14px;
+    font-weight: 700;
+    flex: 1;
+    border: 0;
+    outline: none;
+}
+
+.section-5 .inner-search input::placeholder{
+    color: #979797;
+}
+
+.section-5 .inner-button-create a{
+    display: inline-block;
+    background-color: var(--color-primary);
+    border-radius: 14px;
+    padding: 24px 50px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFF;
+}
+
+@media (max-width: 991.98px){
+    .section-5 .inner-change-status .inner-item {
+        padding: 15px;
+    }
+
+    .section-5 .inner-search{
+        padding: 15px;
+    }
+
+    .section-5 .inner-button-create a{
+        padding: 15px 30px;
+    }
+}
+/* End Section 5 */
+
+/* Section 6 */
+.section-6{
+    margin-bottom: 15px;
+}
+/* End Section 6 */
+
+/* Table-2 */
+.table-2 {
+    overflow-x: auto;
+}
+
+.table-2::-webkit-scrollbar {
+    border-radius: 10px;
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.table-2::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #ddd;
+}
+
+.table-2 table{
+    border-collapse: collapse;
+    background-color: #FFF;
+    border: 0.3px solid #B9B9B9;
+    border-radius: 14px;
+    width: 100%;
+    overflow: hidden;
+    min-width: 1141px;
+}
+
+.table-2 table thead tr th{
+    background-color: #FCFDFD;
+    border-bottom: 0.6px solid #D5D5D5;
+    padding: 15px;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--color-text);
+    text-align: left;
+}
+
+.table-2 table .inner-center{
+    text-align: center;
+}
+
+.table-2 table .inner-check{
+    width: 20px;
+    height: 20px;
+    accent-color: var(--color-primary);
+}
+
+.table-2 table tbody tr td{
+    padding: 8px 15px;
+    border-bottom: 0.4px solid rgba(151, 151, 151, 0.6);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.table-2 table tbody tr:last-child td{
+    border-bottom: 0;
+}
+
+.table-2 table tbody tr td .inner-avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.table-2 table tbody tr td .inner-time{
+    font-size: 12px;
+}
+
+.table-2 table tbody tr td .inner-buttons{
+    background-color: #FAFBFD;
+    border: 0.6px solid #D5D5D5;
+    display: inline-flex;
+    border-radius: 8px;
+}
+
+.table-2 table tbody tr td .inner-buttons a{
+    display: inline-block;
+    padding: 8.5px 16.5px;
+    border-right: 0.4px solid rgba(151, 151, 151, 0.7);
+}
+
+.table-2 table tbody tr td .inner-buttons a:last-child{
+    border-right: 0;
+}
+
+.table-2 table tbody tr td .inner-buttons .inner-edit i{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.table-2 table tbody tr td .inner-buttons .inner-delete i{
+    font-size: 15px;
+    color: #EF3826;
+}
+/* End Table-2 */
+
+/* Section 7 */
+.section-7{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-7 .inner-label{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-text);
+    opacity: 0.6;
+}
+
+.section-7 .inner-pagination{
+    border: 0.6px solid #D5D5D5;
+    border-radius: 8px;
+    background-color: #FAFBFD;
+    padding: 6px 14px;
+    outline: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-text);
+    opacity: 0.6;
+}
+
+/* End Section 7 */
