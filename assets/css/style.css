@@ -18,7 +18,9 @@ a{
     text-decoration: none;
 }
 
-input{
+input,
+select,
+textarea {
     outline: none;
 }
 
@@ -772,7 +774,7 @@ input{
 }
 
 .section-5 .inner-wrap{
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -793,7 +795,7 @@ input{
     border-right: 0.3px solid rgba(151, 151, 151, 0.287);
     font-weight: 700;
     font-size: 14px;
-    color: #202224;
+    color: var(--color-text);
 }
 
 .section-5 .inner-change-status .inner-item:last-child{
@@ -854,6 +856,16 @@ input{
     font-weight: 700;
     font-size: 14px;
     color: #FFF;
+}
+
+.section-5 .inner-bin a {
+    display: inline-block;
+    background-color: #EF382633;
+    border-radius: 14px;
+    padding: 25px 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #EF3826;
 }
 
 @media (max-width: 991.98px){
@@ -998,5 +1010,164 @@ input{
     color: var(--color-text);
     opacity: 0.6;
 }
-
 /* End Section 7 */
+
+/* Section 8 */
+.section-8{
+    background-color: #FFFF;
+    border: 0.3px solid #B9B9B9;
+    border-radius: 14px;
+    padding: 50px;
+}
+
+.section-8 form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.section-8 form .inner-two-col{
+    grid-column: span 2;
+}
+
+.section-8 form .inner-group .inner-label{
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 11px;
+}
+
+.section-8 form .inner-group input,
+.section-8 form .inner-group select,
+.section-8 form .inner-group textarea {
+    background-color: #F5F6FA;
+    border: 0.6px solid #D5D5D5;
+    border-radius: 4px;
+    padding: 0 22px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-text);
+    width: 100%;
+}
+
+.section-8 form .inner-group input,
+.section-8 form .inner-group select {
+    height: 52px;
+}
+
+.section-8 input::-webkit-outer-spin-button,
+.section-8 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.section-8 input {
+  -moz-appearance: textfield;
+}
+
+.section-8 form .inner-group textarea {
+    height: 160px;
+    padding-top: 18px;
+}
+
+.section-8 form .inner-button{
+    text-align: center;
+}
+
+.section-8 form .inner-button button{
+    width: 274px;
+    height: 56px;
+    background-color: var(--color-primary);
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFF;
+    opacity: 0.9;
+    border: 0;
+    cursor: pointer;
+}
+
+.section-8 form .inner-button button:hover{
+    opacity: 1;
+}
+
+.section-8 .inner-back {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-8 .inner-back a{
+    font-weight: 700;
+    font-size: 18px;
+    color: #5A8CFF;
+    text-decoration: underline;
+}
+
+.section-8 .inner-group .inner-input-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section-8 .inner-group .inner-input-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-8 .inner-group .inner-input-item label{
+    font-weight: 600;
+    font-size: 14px;
+    color: #606060;
+    width: 89px;
+}
+
+.section-8 .inner-group .inner-input-item input{
+    flex: 1;
+}
+
+.section-8 form .inner-checkbox-list{
+    border: 0.6px solid #D5D5D5;
+    background-color: #F5F6FA;
+    border-radius: 4px;
+    height: 166px;
+    overflow-y: auto;
+    padding: 14px 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-8 form .inner-checkbox-item{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.section-8 form .inner-checkbox-item input{
+    width: 20px;
+    height: 20px;
+    accent-color: var(--color-primary);
+}
+
+.section-8 form .inner-checkbox-item label{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+@media (max-width: 767.98px) {
+    .section-8 {
+        padding: 20px;
+    }
+
+    .section-8 form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-8 form .inner-two-col{
+        grid-column: span 1;
+    }
+}
+/* End Section 8 */
