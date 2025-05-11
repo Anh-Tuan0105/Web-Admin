@@ -93,6 +93,22 @@ block main
             .inner-group.inner-two-col
                 label(class="inner-label" for="information") Thông tin tour  
                 textarea(name="information" id="information" placeholder="Thông tin tour...")
+            .inner-group.inner-two-col 
+                label(class="inner-label") Lịch trình tour
+                .inner-schedule
+                    .inner-schedule-list
+                        .inner-schedule-item 
+                            .inner-schedule-head 
+                                span.inner-schedule-button.inner-move
+                                    <i class="fa-solid fa-up-down-left-right"></i>
+                                input(type="text")
+                                span.inner-schedule-button.inner-remove
+                                    <i class="fa-solid fa-trash-can"></i>
+                                span.inner-schedule-button.inner-more
+                                    <i class="fa-solid fa-angle-down"></i>
+                            .inner-schedule-body 
+                                textarea(placeholder="Nội dung chi tiết ngày 1...")
+                    div.inner-schedule-create + Thêm lich trình 
             .inner-button.inner-two-col
                 button Tạo mới
         .inner-back 

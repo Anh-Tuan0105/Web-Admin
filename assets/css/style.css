@@ -1157,6 +1157,75 @@ textarea {
     color: var(--color-text);
 }
 
+.section-8 form .inner-schedule-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-8 form .inner-schedule-item{
+    border: 0.6px solid #D5D5D5;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.section-8 form .inner-schedule-head{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.section-8 form .inner-schedule-head input{
+    flex: 1;
+}
+
+.section-8 form .inner-schedule-button{
+    width: 52px;
+    height: 52px;
+    border: 0.6px solid #D5D5D5;
+    border-radius: 4px;
+    background-color: #F5F6FA;
+    font-size: 18px;
+    color: #A6A6A6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-8 form .inner-schedule-button.inner-move{
+    cursor: move;
+}
+
+.section-8 form .inner-schedule-button.inner-remove{
+    cursor: pointer;
+    color: #EF3826;
+}
+
+.section-8 form .inner-schedule-button.inner-more {
+    cursor: pointer;
+}
+
+.section-8 form .inner-schedule-body textarea{
+    height: 300px;
+}
+
+.section-8 form .inner-schedule-create{
+    background-color: #D5D5D5;
+    border-radius: 4px;
+    opacity: 0.9;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color-text);
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.section-8 form .inner-schedule-create:hover{
+    opacity: 1;
+}
+
 @media (max-width: 767.98px) {
     .section-8 {
         padding: 20px;
@@ -1168,6 +1237,18 @@ textarea {
 
     .section-8 form .inner-two-col{
         grid-column: span 1;
+    }
+}
+
+@media (max-width: 575.98px){
+    .section-8 form .inner-schedule-head{
+        flex-wrap: wrap;
+    }
+
+    .section-8 form .inner-schedule-head input{
+        flex: none;
+        width: 100%;
+        order: 1;
     }
 }
 /* End Section 8 */
