@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-:root{
+:root {
     --color-primary: #4880FF;
     --color-text: #202224;
 }
 
-*{
+* {
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
 }
 
-body{
+body {
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -27,7 +27,7 @@ textarea {
 
 /* Page Account */
 
-.page-account{
+.page-account {
     background-image: url(../images/bg_account.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,11 +35,12 @@ textarea {
     padding: 50px 0;
     min-height: 100vh;
 }
+
 /* End Page Account */
 
 /* Form-Account */
 
-.form-account{
+.form-account {
     width: 630px;
     background-color: #FFFFFF;
     border: 0.3px solid #B9B9B9;
@@ -48,7 +49,7 @@ textarea {
     padding: 90px 57px;
 }
 
-.form-account .inner-title{
+.form-account .inner-title {
     font-weight: 700;
     font-size: 32px;
     line-height: 100%;
@@ -59,7 +60,7 @@ textarea {
     margin-bottom: 15px;
 }
 
-.form-account .inner-desc{
+.form-account .inner-desc {
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
@@ -71,15 +72,15 @@ textarea {
     margin-bottom: 40px;
 }
 
-.form-account .inner-form{
+.form-account .inner-form {
     margin-bottom: 30px;
 }
 
-.form-account .inner-group{
+.form-account .inner-group {
     margin-bottom: 30px;
 }
 
-.form-account .inner-group .inner-label{
+.form-account .inner-group .inner-label {
     display: block;
     margin-bottom: 15px;
     font-weight: 600;
@@ -90,7 +91,7 @@ textarea {
     opacity: 0.8;
 }
 
-.form-account .inner-group .inner-control{
+.form-account .inner-group .inner-control {
     background-color: #F1F4F9;
     border: 1px solid #D8D8D8;
     border-radius: 8px;
@@ -103,39 +104,40 @@ textarea {
     letter-spacing: -0.06px;
 }
 
-.form-account .inner-group .inner-control::placeholder{
+.form-account .inner-group .inner-control::placeholder {
     color: #A6A6A6;
 }
 
 .form-account input.inner-control::-webkit-outer-spin-button,
 .form-account input.inner-control::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .form-account input.inner-control {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
-.form-account .inner-meta{
+.form-account .inner-meta {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
 }
-.form-account .inner-meta .inner-confirm{
+
+.form-account .inner-meta .inner-confirm {
     display: flex;
     align-items: center;
 }
 
-.form-account .inner-meta .inner-confirm .inner-check{
+.form-account .inner-meta .inner-confirm .inner-check {
     height: 24px;
     width: 24px;
     margin-right: 12px;
     accent-color: var(--color-primary);
 }
 
-.form-account .inner-meta .inner-confirm .inner-label{
+.form-account .inner-meta .inner-confirm .inner-label {
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
@@ -144,7 +146,7 @@ textarea {
     opacity: 0.6;
 }
 
-.form-account .inner-meta .inner-forgot-password{
+.form-account .inner-meta .inner-forgot-password {
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
@@ -153,12 +155,12 @@ textarea {
     opacity: 0.6;
 }
 
-.form-account .inner-meta .inner-forgot-password:hover{
+.form-account .inner-meta .inner-forgot-password:hover {
     color: var(--color-primary);
     opacity: 1;
 }
 
-.form-account .inner-form .inner-button{
+.form-account .inner-form .inner-button {
     width: 100%;
     height: 56px;
     background-color: #4880FF;
@@ -173,18 +175,18 @@ textarea {
     cursor: pointer;
 }
 
-.form-account .inner-form .inner-button:hover{
+.form-account .inner-form .inner-button:hover {
     opacity: 1;
 }
 
-.form-account .inner-more{
+.form-account .inner-more {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.form-account .inner-more span{
+.form-account .inner-more span {
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
@@ -192,7 +194,7 @@ textarea {
     opacity: 0.65;
 }
 
-.form-account .inner-more a{
+.form-account .inner-more a {
     font-weight: 700;
     font-size: 18px;
     line-height: 100%;
@@ -200,10 +202,11 @@ textarea {
     color: #5A8CFF;
     text-decoration: underline;
 }
+
 /* End Form-Account */
 
 /* Header */
-.header{
+.header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #E0E0E0;
     height: 70px;
@@ -211,31 +214,32 @@ textarea {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 998;
     display: flex;
 }
 
-.header .inner-logo{
+.header .inner-logo {
     width: 240px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header .inner-logo a{
+.header .inner-logo a {
     font-weight: 800;
     font-size: 24px;
     line-height: 100%;
 }
-.header .inner-logo span:nth-child(1){
+
+.header .inner-logo span:nth-child(1) {
     color: var(--color-primary);
 }
 
-.header .inner-logo span:nth-child(2){
+.header .inner-logo span:nth-child(2) {
     color: var(--color-text);
 }
 
-.header .inner-wrap{
+.header .inner-wrap {
     flex: 1;
     display: flex;
     align-items: center;
@@ -244,17 +248,17 @@ textarea {
     gap: 40px;
 }
 
-.header .inner-notify{
-    position: relative; 
+.header .inner-notify {
+    position: relative;
     cursor: pointer;
 }
 
-.header .inner-notify img{
+.header .inner-notify img {
     height: 25px;
     width: auto;
 }
 
-.header .inner-notify span{
+.header .inner-notify span {
     background-color: #F93C65;
     width: 16px;
     height: 16px;
@@ -271,31 +275,31 @@ textarea {
     right: -4px;
 }
 
-.header .inner-account{
+.header .inner-account {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.header .inner-account .inner-avatar{
+.header .inner-account .inner-avatar {
     height: 44px;
     width: 44px;
     overflow: hidden;
     border-radius: 50%;
 }
 
-.header .inner-account .inner-avatar img{
+.header .inner-account .inner-avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.header .inner-account .inner-text{
+.header .inner-account .inner-text {
     flex: 1;
 }
 
-.header .inner-account .inner-text .inner-name{
+.header .inner-account .inner-text .inner-name {
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
@@ -303,19 +307,19 @@ textarea {
     margin-bottom: 3px;
 }
 
-.header .inner-account .inner-text .inner-role{
+.header .inner-account .inner-text .inner-role {
     font-weight: 600;
     font-size: 12px;
     line-height: 100%;
     color: #565656;
 }
 
-.header .inner-button-menu{
+.header .inner-button-menu {
     display: none;
 }
 
-@media (max-width: 991.98px){
-    .header .inner-button-menu{
+@media (max-width: 991.98px) {
+    .header .inner-button-menu {
         display: inline-block;
         font-size: 24px;
         background-color: transparent;
@@ -325,21 +329,22 @@ textarea {
     }
 }
 
-@media (max-width: 575.98px){
-    .header .inner-logo{
+@media (max-width: 575.98px) {
+    .header .inner-logo {
         width: auto;
         margin-left: 15px;
     }
 
-    .header .inner-wrap{
+    .header .inner-wrap {
         margin-right: 15px;
         gap: 20px;
     }
 }
+
 /* End Header */
 
 /* Sider */
-.sider{
+.sider {
     background-color: #FFFFFF;
     border-right: 1px solid #E0E0E0;
     width: 240px;
@@ -350,21 +355,21 @@ textarea {
     overflow-y: auto;
 }
 
-.sider::-webkit-scrollbar{
-	width: 3px;
+.sider::-webkit-scrollbar {
+    width: 3px;
 }
 
-.sider::-webkit-scrollbar-thumb{
-	background-color: #ddd;
+.sider::-webkit-scrollbar-thumb {
+    background-color: #ddd;
 }
 
-.sider .inner-menu{
+.sider .inner-menu {
     list-style: none;
     margin: 11px 0 16px 0;
     padding: 0;
 }
 
-.sider .inner-menu li a{
+.sider .inner-menu li a {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -379,13 +384,13 @@ textarea {
     position: relative;
 }
 
-.sider .inner-menu li a.active{
+.sider .inner-menu li a.active {
     background-color: var(--color-primary);
     color: #FFFFFF;
     border-radius: 6px;
 }
 
-.sider .inner-menu li a.active::before{
+.sider .inner-menu li a.active::before {
     content: "";
     position: absolute;
     background-color: var(--color-primary);
@@ -397,24 +402,50 @@ textarea {
     left: -24px;
 }
 
-.sider hr{
+.sider hr {
     border: 0.6px solid #E0E0E0;
     margin-bottom: 16px;
 }
 
-.sider .inner-menu li a.inner-logout{
+.sider .inner-menu li a.inner-logout {
     color: #F93C65;
 }
 
-@media(max-width: 991.98px){
-    .sider{
+@media(max-width: 991.98px) {
+    .sider {
         display: none;
     }
+
+    .sider.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100%;
+        z-index: 1001;
+    }
+
+    .sider-overlay {
+        display: none;
+    }
+
+    .sider-overlay.active{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000038;
+        z-index: 1000;
+    }
 }
+
 /* End Sider */
 
 /* Main */
-.main{
+.main {
     background-color: #F5F6FA;
     width: calc(100% - 240px);
     min-height: calc(100vh - 70px);
@@ -424,22 +455,23 @@ textarea {
     padding: 30px;
 }
 
-@media(max-width: 991.98px){
-    .main{
+@media(max-width: 991.98px) {
+    .main {
         width: 100%;
         left: 0;
     }
 }
 
-@media(max-width: 575.98px){
-    .main{
+@media(max-width: 575.98px) {
+    .main {
         padding: 30px 15px;
     }
 }
+
 /* End Main */
 
 /* Box title */
-.box-title{
+.box-title {
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 700;
@@ -447,17 +479,18 @@ textarea {
     line-height: 100%;
     color: var(--color-text);
 }
+
 /* End Box title */
 
 /* Section-1 */
-.section-1{
+.section-1 {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 30px;
 }
 
-.section-1 .inner-item{
+.section-1 .inner-item {
     background-color: #FFFFFF;
     border-radius: 14px;
     display: flex;
@@ -467,17 +500,17 @@ textarea {
     gap: 20px;
 }
 
-.section-1 .inner-icon{
+.section-1 .inner-icon {
     width: 60px;
 }
 
-.section-1 .inner-icon img{
+.section-1 .inner-icon img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.section-1 .inner-content .inner-title{
+.section-1 .inner-content .inner-title {
     font-weight: 600;
     font-size: 16px;
     line-height: 100%;
@@ -485,7 +518,7 @@ textarea {
     margin-bottom: 4px;
 }
 
-.section-1 .inner-content .inner-number{
+.section-1 .inner-content .inner-number {
     font-weight: 700;
     font-size: 28px;
     line-height: 100%;
@@ -493,28 +526,29 @@ textarea {
     letter-spacing: 1px;
 }
 
-@media (max-width: 1199.98px){
-    .section-1{
-        grid-template-columns: repeat(2,1fr);
+@media (max-width: 1199.98px) {
+    .section-1 {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 767.98px){
-    .section-1{
-        grid-template-columns: repeat(1,1fr);
+@media (max-width: 767.98px) {
+    .section-1 {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
+
 /* End Section-1 */
 
 /* Section-2 */
-.section-2{
+.section-2 {
     background-color: #FFFFFF;
     box-shadow: 6px 6px 54px 0px #0000000D;
     border-radius: 14px;
     padding: 32px;
 }
 
-.section-2 .inner-head{
+.section-2 .inner-head {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -523,7 +557,7 @@ textarea {
     margin-bottom: 32px;
 }
 
-.section-2 .inner-head .inner-title{
+.section-2 .inner-head .inner-title {
     margin: 0;
     font-weight: 700;
     font-size: 24px;
@@ -531,24 +565,24 @@ textarea {
     color: var(--color-text);
 }
 
-.section-2 .inner-head .inner-filter input{
+.section-2 .inner-head .inner-filter input {
     height: 28px;
     border: 0.6px solid #D5D5D5;
     border-radius: 4px;
     font-weight: 600;
     font-size: 12px;
     padding: 0 16px;
-    color:#2B303466;
+    color: #2B303466;
 }
 
-.section-2 .inner-chart{
+.section-2 .inner-chart {
     height: 273px;
 }
 
 /* End Section-2 */
 
 /* Section-3 */
-.section-3{
+.section-3 {
     margin-top: 30px;
     background-color: #FFFFFF;
     box-shadow: 6px 6px 54px 0px #0000000D;
@@ -556,7 +590,7 @@ textarea {
     padding: 32px;
 }
 
-.section-3 .inner-title{
+.section-3 .inner-title {
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 700;
@@ -564,32 +598,32 @@ textarea {
     line-height: 20px;
     color: var(--color-text);
 }
+
 /* End Section-3 */
 
 /* Table-1 */
-.table-1{
+.table-1 {
     overflow-x: auto;
 }
 
-.table-1::-webkit-scrollbar
-{
+.table-1::-webkit-scrollbar {
     border-radius: 10px;
-	width: 12px;
-	background-color: #F5F5F5;
+    width: 12px;
+    background-color: #F5F5F5;
 }
 
-.table-1::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-color: #ddd;
+.table-1::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ddd;
 }
 
-.table-1 table{
+.table-1 table {
     width: 100%;
     border-collapse: collapse;
     min-width: 1076px;
 }
-.table-1 table thead tr th{
+
+.table-1 table thead tr th {
     background-color: #F1F4F9;
     padding: 14px 24px;
     text-align: left;
@@ -599,21 +633,21 @@ textarea {
     color: var(--color-text);
 }
 
-.table-1 table thead tr th:first-child{
+.table-1 table thead tr th:first-child {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
 
-.table-1 table thead tr th:last-child{
+.table-1 table thead tr th:last-child {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
-.table-1 table thead tr th.inner-text-right{
+.table-1 table thead tr th.inner-text-right {
     text-align: right;
 }
 
-.table-1 table tbody tr td{
+.table-1 table tbody tr td {
     padding: 10px 24px;
     text-align: left;
     border-bottom: 0.4px solid rgba(151, 151, 151, 0.4);
@@ -627,25 +661,25 @@ textarea {
     margin-bottom: 3px;
 } */
 
-.table-1 table tbody tr td .inner-code{
+.table-1 table tbody tr td .inner-code {
     font-weight: 700;
     font-size: 14px;
     color: #4880FF;
 }
 
-.table-1 .inner-list{
+.table-1 .inner-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.table-1 .inner-list .inner-item{
+.table-1 .inner-list .inner-item {
     display: flex;
     align-items: flex-start;
     gap: 10px;
 }
 
-.table-1 .inner-list .inner-item .inner-content .inner-name{
+.table-1 .inner-list .inner-item .inner-content .inner-name {
     font-weight: 600;
     font-size: 14px;
     line-height: 100%;
@@ -653,7 +687,7 @@ textarea {
     margin-bottom: 3px;
 }
 
-.table-1 .inner-list .inner-item .inner-content .inner-quantity{
+.table-1 .inner-list .inner-item .inner-content .inner-quantity {
     display: flex;
     flex-direction: column;
     gap: 3px;
@@ -662,26 +696,27 @@ textarea {
     color: var(--color-text);
 }
 
-.table-1 .inner-list .inner-item .inner-image{
+.table-1 .inner-list .inner-item .inner-image {
     width: 76px;
     height: 76px;
     border-radius: 6px;
     overflow: hidden;
 }
 
-.table-1 .inner-list .inner-item .inner-image img{
+.table-1 .inner-list .inner-item .inner-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.table-1 table tbody tr td.inner-text-right{
+.table-1 table tbody tr td.inner-text-right {
     text-align: right;
 }
+
 /* End Table-1 */
 
 /* Badge */
-.badge{
+.badge {
     border-radius: 4.5px;
     padding: 6px 22px;
     display: inline-block;
@@ -690,28 +725,29 @@ textarea {
     line-height: 100%;
 }
 
-.badge-orange{
+.badge-orange {
     color: #FFA756;
     background-color: rgba(255, 168, 86, 0.2);
 }
 
-.badge-green{
+.badge-green {
     color: #00B69B;
     background-color: rgba(0, 182, 155, 0.2);
 }
 
-.badge-red{
+.badge-red {
     color: #EF3826;
     background-color: rgba(239, 55, 38, 0.2);
 }
+
 /* End Badge */
 
 /* Section 4 */
-.section-4{
+.section-4 {
     margin-bottom: 15px;
 }
 
-.section-4 .inner-wrap{
+.section-4 .inner-wrap {
     display: inline-flex;
     flex-wrap: wrap;
     border: 0.6px solid #D5D5D5;
@@ -719,7 +755,7 @@ textarea {
     border-radius: 14px;
 }
 
-.section-4 .inner-item{
+.section-4 .inner-item {
     padding: 24px;
     display: inline-flex;
     align-items: center;
@@ -730,16 +766,16 @@ textarea {
     color: #202224;
 }
 
-.section-4 .inner-item:last-child{
+.section-4 .inner-item:last-child {
     border-right: 0;
 }
 
-.section-4 .inner-item i{
+.section-4 .inner-item i {
     font-size: 22px;
 }
 
 .section-4 .inner-item select,
-.section-4 .inner-item input[type="date"]{
+.section-4 .inner-item input[type="date"] {
     border: 0;
     outline: none;
     font-weight: 700;
@@ -748,38 +784,39 @@ textarea {
     cursor: pointer;
 }
 
-.section-4 .inner-item input[type="date"]{
+.section-4 .inner-item input[type="date"] {
     width: 110px;
 }
 
-.section-4 .inner-item.inner-reset{
+.section-4 .inner-item.inner-reset {
     color: #EA0234;
     cursor: pointer;
 }
 
-.section-4 .inner-item.inner-reset i{
+.section-4 .inner-item.inner-reset i {
     font-size: 15px;
 }
 
-@media (max-width: 991.98px){
-    .section-4 .inner-item{
+@media (max-width: 991.98px) {
+    .section-4 .inner-item {
         padding: 15px;
     }
 }
+
 /* End Section 4 */
 
 /* Section 5 */
-.section-5{
+.section-5 {
     margin-bottom: 30px;
 }
 
-.section-5 .inner-wrap{
+.section-5 .inner-wrap {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.section-5 .inner-change-status{
+.section-5 .inner-change-status {
     display: inline-flex;
     flex-wrap: wrap;
     border: 0.6px solid #D5D5D5;
@@ -787,7 +824,7 @@ textarea {
     border-radius: 14px;
 }
 
-.section-5 .inner-change-status .inner-item{
+.section-5 .inner-change-status .inner-item {
     padding: 24px;
     display: inline-flex;
     align-items: center;
@@ -798,11 +835,11 @@ textarea {
     color: var(--color-text);
 }
 
-.section-5 .inner-change-status .inner-item:last-child{
+.section-5 .inner-change-status .inner-item:last-child {
     border-right: 0;
 }
 
-.section-5 .inner-change-status .inner-item select{
+.section-5 .inner-change-status .inner-item select {
     border: 0;
     outline: none;
     font-weight: 700;
@@ -811,7 +848,7 @@ textarea {
     cursor: pointer;
 }
 
-.section-5 .inner-change-status .inner-item button{
+.section-5 .inner-change-status .inner-item button {
     background-color: transparent;
     border: 0;
     font-weight: 600;
@@ -820,7 +857,7 @@ textarea {
     cursor: pointer;
 }
 
-.section-5 .inner-search{
+.section-5 .inner-search {
     border: 1px solid #E2E2E2;
     background-color: #FFF;
     display: inline-flex;
@@ -832,11 +869,11 @@ textarea {
     padding: 24px;
 }
 
-.section-5 .inner-search i{
+.section-5 .inner-search i {
     font-size: 20px;
 }
 
-.section-5 .inner-search input{
+.section-5 .inner-search input {
     font-size: 14px;
     font-weight: 700;
     flex: 1;
@@ -844,11 +881,11 @@ textarea {
     outline: none;
 }
 
-.section-5 .inner-search input::placeholder{
+.section-5 .inner-search input::placeholder {
     color: #979797;
 }
 
-.section-5 .inner-button-create a{
+.section-5 .inner-button-create a {
     display: inline-block;
     background-color: var(--color-primary);
     border-radius: 14px;
@@ -868,25 +905,27 @@ textarea {
     color: #EF3826;
 }
 
-@media (max-width: 991.98px){
+@media (max-width: 991.98px) {
     .section-5 .inner-change-status .inner-item {
         padding: 15px;
     }
 
-    .section-5 .inner-search{
+    .section-5 .inner-search {
         padding: 15px;
     }
 
-    .section-5 .inner-button-create a{
+    .section-5 .inner-button-create a {
         padding: 15px 30px;
     }
 }
+
 /* End Section 5 */
 
 /* Section 6 */
-.section-6{
+.section-6 {
     margin-bottom: 15px;
 }
+
 /* End Section 6 */
 
 /* Table-2 */
@@ -896,16 +935,16 @@ textarea {
 
 .table-2::-webkit-scrollbar {
     border-radius: 10px;
-	width: 12px;
-	background-color: #F5F5F5;
+    width: 12px;
+    background-color: #F5F5F5;
 }
 
 .table-2::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background-color: #ddd;
+    border-radius: 10px;
+    background-color: #ddd;
 }
 
-.table-2 table{
+.table-2 table {
     border-collapse: collapse;
     background-color: #FFF;
     border: 0.3px solid #B9B9B9;
@@ -915,7 +954,7 @@ textarea {
     min-width: 1141px;
 }
 
-.table-2 table thead tr th{
+.table-2 table thead tr th {
     background-color: #FCFDFD;
     border-bottom: 0.6px solid #D5D5D5;
     padding: 15px;
@@ -925,81 +964,82 @@ textarea {
     text-align: left;
 }
 
-.table-2 table .inner-center{
+.table-2 table .inner-center {
     text-align: center;
 }
 
-.table-2 table .inner-check{
+.table-2 table .inner-check {
     width: 20px;
     height: 20px;
     accent-color: var(--color-primary);
 }
 
-.table-2 table tbody tr td{
+.table-2 table tbody tr td {
     padding: 8px 15px;
     border-bottom: 0.4px solid rgba(151, 151, 151, 0.6);
     font-weight: 600;
     font-size: 14px;
 }
 
-.table-2 table tbody tr:last-child td{
+.table-2 table tbody tr:last-child td {
     border-bottom: 0;
 }
 
-.table-2 table tbody tr td .inner-avatar{
+.table-2 table tbody tr td .inner-avatar {
     width: 60px;
     height: 60px;
     border-radius: 6px;
     object-fit: cover;
 }
 
-.table-2 table tbody tr td .inner-time{
+.table-2 table tbody tr td .inner-time {
     font-size: 12px;
 }
 
-.table-2 table tbody tr td .inner-buttons{
+.table-2 table tbody tr td .inner-buttons {
     background-color: #FAFBFD;
     border: 0.6px solid #D5D5D5;
     display: inline-flex;
     border-radius: 8px;
 }
 
-.table-2 table tbody tr td .inner-buttons a{
+.table-2 table tbody tr td .inner-buttons a {
     display: inline-block;
     padding: 8.5px 16.5px;
     border-right: 0.4px solid rgba(151, 151, 151, 0.7);
 }
 
-.table-2 table tbody tr td .inner-buttons a:last-child{
+.table-2 table tbody tr td .inner-buttons a:last-child {
     border-right: 0;
 }
 
-.table-2 table tbody tr td .inner-buttons .inner-edit i{
+.table-2 table tbody tr td .inner-buttons .inner-edit i {
     font-size: 15px;
     color: rgba(0, 0, 0, 0.6);
 }
 
-.table-2 table tbody tr td .inner-buttons .inner-delete i{
+.table-2 table tbody tr td .inner-buttons .inner-delete i {
     font-size: 15px;
     color: #EF3826;
 }
+
 /* End Table-2 */
 
 /* Section 7 */
-.section-7{
+.section-7 {
     display: inline-flex;
     align-items: center;
     gap: 20px;
 }
 
-.section-7 .inner-label{
+.section-7 .inner-label {
     font-weight: 600;
     font-size: 14px;
     color: var(--color-text);
     opacity: 0.6;
 }
 
-.section-7 .inner-pagination{
+.section-7 .inner-pagination {
     border: 0.6px solid #D5D5D5;
     border-radius: 8px;
     background-color: #FAFBFD;
@@ -1010,27 +1050,28 @@ textarea {
     color: var(--color-text);
     opacity: 0.6;
 }
+
 /* End Section 7 */
 
 /* Section 8 */
-.section-8{
+.section-8 {
     background-color: #FFFF;
     border: 0.3px solid #B9B9B9;
     border-radius: 14px;
     padding: 50px;
 }
 
-.section-8 form{
+.section-8 form {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 
-.section-8 form .inner-two-col{
+.section-8 form .inner-two-col {
     grid-column: span 2;
 }
 
-.section-8 form .inner-group .inner-label{
+.section-8 form .inner-group .inner-label {
     display: block;
     font-weight: 600;
     font-size: 14px;
@@ -1051,6 +1092,10 @@ textarea {
     width: 100%;
 }
 
+.section-8 form .inner-group textarea {
+    resize: none;
+}
+
 .section-8 form .inner-group input,
 .section-8 form .inner-group select {
     height: 52px;
@@ -1058,12 +1103,12 @@ textarea {
 
 .section-8 input::-webkit-outer-spin-button,
 .section-8 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .section-8 input {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 .section-8 form .inner-group textarea {
@@ -1071,11 +1116,11 @@ textarea {
     padding-top: 18px;
 }
 
-.section-8 form .inner-button{
+.section-8 form .inner-button {
     text-align: center;
 }
 
-.section-8 form .inner-button button{
+.section-8 form .inner-button button {
     width: 274px;
     height: 56px;
     background-color: var(--color-primary);
@@ -1088,7 +1133,7 @@ textarea {
     cursor: pointer;
 }
 
-.section-8 form .inner-button button:hover{
+.section-8 form .inner-button button:hover {
     opacity: 1;
 }
 
@@ -1097,37 +1142,37 @@ textarea {
     margin-top: 30px;
 }
 
-.section-8 .inner-back a{
+.section-8 .inner-back a {
     font-weight: 700;
     font-size: 18px;
     color: #5A8CFF;
     text-decoration: underline;
 }
 
-.section-8 .inner-group .inner-input-list{
+.section-8 .inner-group .inner-input-list {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.section-8 .inner-group .inner-input-item{
+.section-8 .inner-group .inner-input-item {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.section-8 .inner-group .inner-input-item label{
+.section-8 .inner-group .inner-input-item label {
     font-weight: 600;
     font-size: 14px;
     color: #606060;
     width: 89px;
 }
 
-.section-8 .inner-group .inner-input-item input{
+.section-8 .inner-group .inner-input-item input {
     flex: 1;
 }
 
-.section-8 form .inner-checkbox-list{
+.section-8 form .inner-checkbox-list {
     border: 0.6px solid #D5D5D5;
     background-color: #F5F6FA;
     border-radius: 4px;
@@ -1139,48 +1184,48 @@ textarea {
     gap: 8px;
 }
 
-.section-8 form .inner-checkbox-item{
+.section-8 form .inner-checkbox-item {
     display: flex;
     align-items: center;
     gap: 14px;
 }
 
-.section-8 form .inner-checkbox-item input{
+.section-8 form .inner-checkbox-item input {
     width: 20px;
     height: 20px;
     accent-color: var(--color-primary);
 }
 
-.section-8 form .inner-checkbox-item label{
+.section-8 form .inner-checkbox-item label {
     font-weight: 500;
     font-size: 14px;
     color: var(--color-text);
 }
 
-.section-8 form .inner-schedule-list{
+.section-8 form .inner-schedule-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.section-8 form .inner-schedule-item{
+.section-8 form .inner-schedule-item {
     border: 0.6px solid #D5D5D5;
     border-radius: 4px;
     padding: 20px;
     margin-bottom: 15px;
 }
 
-.section-8 form .inner-schedule-head{
+.section-8 form .inner-schedule-head {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
 }
 
-.section-8 form .inner-schedule-head input{
+.section-8 form .inner-schedule-head input {
     flex: 1;
 }
 
-.section-8 form .inner-schedule-button{
+.section-8 form .inner-schedule-button {
     width: 52px;
     height: 52px;
     border: 0.6px solid #D5D5D5;
@@ -1193,11 +1238,15 @@ textarea {
     justify-content: center;
 }
 
-.section-8 form .inner-schedule-button.inner-move{
+.section-8 form .inner-schedule-item.hidden .inner-schedule-button.inner-more i::before {
+    content: "\f106";
+}
+
+.section-8 form .inner-schedule-button.inner-move {
     cursor: move;
 }
 
-.section-8 form .inner-schedule-button.inner-remove{
+.section-8 form .inner-schedule-button.inner-remove {
     cursor: pointer;
     color: #EF3826;
 }
@@ -1206,11 +1255,15 @@ textarea {
     cursor: pointer;
 }
 
-.section-8 form .inner-schedule-body textarea{
+.section-8 form .inner-schedule-body textarea {
     height: 300px;
 }
 
-.section-8 form .inner-schedule-create{
+.section-8 form .inner-schedule-item.hidden .inner-schedule-body {
+    display: none;
+}
+
+.section-8 form .inner-schedule-create {
     background-color: #D5D5D5;
     border-radius: 4px;
     opacity: 0.9;
@@ -1222,7 +1275,7 @@ textarea {
     cursor: pointer;
 }
 
-.section-8 form .inner-schedule-create:hover{
+.section-8 form .inner-schedule-create:hover {
     opacity: 1;
 }
 
@@ -1235,20 +1288,21 @@ textarea {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .section-8 form .inner-two-col{
+    .section-8 form .inner-two-col {
         grid-column: span 1;
     }
 }
 
-@media (max-width: 575.98px){
-    .section-8 form .inner-schedule-head{
+@media (max-width: 575.98px) {
+    .section-8 form .inner-schedule-head {
         flex-wrap: wrap;
     }
 
-    .section-8 form .inner-schedule-head input{
+    .section-8 form .inner-schedule-head input {
         flex: none;
         width: 100%;
         order: 1;
     }
 }
+
 /* End Section 8 */
