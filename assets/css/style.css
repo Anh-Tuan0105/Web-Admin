@@ -430,7 +430,7 @@ textarea {
         display: none;
     }
 
-    .sider-overlay.active{
+    .sider-overlay.active {
         display: block;
         position: fixed;
         top: 0;
@@ -968,10 +968,21 @@ textarea {
     text-align: center;
 }
 
+.table-2 table .inner-center div {
+    text-align: center;
+    opacity: 0.8;
+}
+
 .table-2 table .inner-check {
     width: 20px;
     height: 20px;
     accent-color: var(--color-primary);
+}
+
+.table-2 table tbody tr td .inner-code {
+    font-weight: 700;
+    font-size: 14px;
+    color: #4880FF;
 }
 
 .table-2 table tbody tr td {
@@ -1021,6 +1032,48 @@ textarea {
 .table-2 table tbody tr td .inner-buttons .inner-delete i {
     font-size: 15px;
     color: #EF3826;
+}
+
+.table-2 .inner-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.table-2 .inner-list .inner-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.table-2 .inner-list .inner-item .inner-content .inner-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--color-text);
+    margin-bottom: 3px;
+}
+
+.table-2 .inner-list .inner-item .inner-content .inner-quantity {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--color-text);
+}
+
+.table-2 .inner-list .inner-item .inner-image {
+    width: 76px;
+    height: 76px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.table-2 .inner-list .inner-item .inner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* End Table-2 */
@@ -1291,6 +1344,58 @@ textarea {
     .section-8 form .inner-two-col {
         grid-column: span 1;
     }
+}
+
+.section-8 form .inner-order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-8 form .inner-order-item {
+    display: flex;
+    gap: 12px;
+}
+
+.section-8 form .inner-order-image {
+    width: 115px;
+    height: 115px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.section-8 form .inner-order-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-8 form .inner-order-content {
+    flex: 1;
+}
+
+.section-8 form .inner-order-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+.section-8 form .inner-order-text {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--color-text);
+    margin-top: 3px;
+}
+
+.section-8 form .inner-order-total {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+.section-8 form .inner-order-price {
+    font-weight: 700;
+    color: #EF3826;
 }
 
 @media (max-width: 575.98px) {
