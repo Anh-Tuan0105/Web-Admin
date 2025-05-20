@@ -1,0 +1,252 @@
+extends ../layouts/default.pug
+
+block title 
+    title Tài khoản quản trị
+block main 
+    h1.box-title Tài khoản quản trị
+
+    //- Section 4
+    .section-4 
+        .inner-wrap 
+            .inner-item.inner-label 
+                <i class="fa-solid fa-filter"></i> Bộ lọc
+            .inner-item 
+                select
+                    option Trạng thái 
+                    option Hoạt động
+                    option Tạm dừng    
+            .inner-item.inner-date
+                input(type="date")
+                span -
+                input(type="date")
+            .inner-item 
+                select
+                    option Nhóm quyền
+                    option Quản trị viên 
+                    option Quản lý sản phẩm
+                    option Quản lý đơn hàng
+            .inner-item.inner-reset 
+                <i class="fa-solid fa-rotate-left"></i> Xóa bộ lọc   
+    //- End Section 4
+
+    //- Section 5
+    .section-5 
+        .inner-wrap 
+            .inner-change-status 
+                .inner-item 
+                    select 
+                        option(value="") -- Hành động --
+                        option(value="") Hoạt động
+                        option(value="") Tạm dừng
+                        option(value="") Xóa
+                .inner-item 
+                    button Áp dụng
+            .inner-search 
+                <i class="fa-solid fa-magnifying-glass"></i> 
+                input(type="text" placeholder="Tìm kiếm")
+            .inner-button-create 
+                a(href="#") + Tạo mới
+    //- End Section 5
+
+    //- Section 6
+    .section-6 
+        .table-2 
+            table 
+                thead 
+                    tr 
+                        th 
+                            input(type="checkbox" class="inner-check")
+                        th Họ tên
+                        th(class="inner-center") Ảnh đại diện
+                        th Email
+                        th Số điện thoại
+                        th Nhóm quyền
+                        th Chức vụ
+                        th Trạng thái
+                        th Hành động
+                tbody 
+                    tr 
+                        td 
+                            input(type="checkbox" class="inner-check") 
+                        td Lê Văn A
+                        td(class="inner-center") 
+                            img(src="assets/images/avatar.jpg" class="inner-avatar")
+                        td levana@gmail.com
+                        td 01234567890
+                        td Quản trị viên 
+                        td Giám đốc
+                        td
+                            .badge.badge-green Hoạt động
+                        td 
+                            .inner-buttons
+                                a(href="#" class="inner-edit")
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                a(href="#" class="inner-delete")
+                                    <i class="fa-solid fa-trash-can"></i>
+                    tr 
+                        td 
+                            input(type="checkbox" class="inner-check") 
+                        td Lê Văn A
+                        td(class="inner-center") 
+                            img(src="assets/images/avatar.jpg" class="inner-avatar")
+                        td levana@gmail.com
+                        td 01234567890
+                        td Quản trị viên 
+                        td Giám đốc
+                        td
+                            .badge.badge-green Hoạt động
+                        td 
+                            .inner-buttons
+                                a(href="#" class="inner-edit")
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                a(href="#" class="inner-delete")
+                                    <i class="fa-solid fa-trash-can"></i>
+                    tr 
+                        td 
+                            input(type="checkbox" class="inner-check") 
+                        td Lê Văn A
+                        td(class="inner-center") 
+                            img(src="assets/images/avatar.jpg" class="inner-avatar")
+                        td levana@gmail.com
+                        td 01234567890
+                        td Quản trị viên 
+                        td Giám đốc.
+                        td
+                            .badge.badge-green Hoạt động
+                        td 
+                            .inner-buttons
+                                a(href="#" class="inner-edit")
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                a(href="#" class="inner-delete")
+                                    <i class="fa-solid fa-trash-can"></i>
+                    tr 
+                        td 
+                            input(type="checkbox" class="inner-check") 
+                        td Lê Văn A
+                        td(class="inner-center") 
+                            img(src="assets/images/avatar.jpg" class="inner-avatar")
+                        td levana@gmail.com
+                        td 01234567890
+                        td Quản trị viên 
+                        td Giám đốc.
+                        td 
+                            .badge.badge-green Hoạt động
+                        td 
+                            .inner-buttons
+                                a(href="#" class="inner-edit")
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                a(href="#" class="inner-delete")
+                                    <i class="fa-solid fa-trash-can"></i>
+                    tr 
+                        td 
+                            input(type="checkbox" class="inner-check") 
+                        td Lê Văn A
+                        td(class="inner-center") 
+                            img(src="assets/images/avatar.jpg" class="inner-avatar")
+                        td levana@gmail.com
+                        td 01234567890
+                        td Quản trị viên 
+                        td Giám đốc.
+                        td 
+                            .badge.badge-green Hoạt động
+                        td 
+                            .inner-buttons
+                                a(href="#" class="inner-edit")
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                a(href="#" class="inner-delete")
+                                    <i class="fa-solid fa-trash-can"></i>
+                    tr 
+                        td 
+                            input(type="checkbox" class="inner-check") 
+                        td Lê Văn A
+                        td(class="inner-center") 
+                            img(src="assets/images/avatar.jpg" class="inner-avatar")
+                        td levana@gmail.com
+                        td 01234567890
+                        td Quản trị viên 
+                        td Giám đốc.
+                        td 
+                            .badge.badge-green Hoạt động
+                        td 
+                            .inner-buttons
+                                a(href="#" class="inner-edit")
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                a(href="#" class="inner-delete")
+                                    <i class="fa-solid fa-trash-can"></i>
+                    tr 
+                        td 
+                            input(type="checkbox" class="inner-check") 
+                        td Lê Văn A
+                        td(class="inner-center") 
+                            img(src="assets/images/avatar.jpg" class="inner-avatar")
+                        td levana@gmail.com
+                        td 01234567890
+                        td Quản trị viên 
+                        td Giám đốc.
+                        td 
+                            .badge.badge-green Hoạt động
+                        td 
+                            .inner-buttons
+                                a(href="#" class="inner-edit")
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                a(href="#" class="inner-delete")
+                                    <i class="fa-solid fa-trash-can"></i>
+                    tr 
+                        td 
+                            input(type="checkbox" class="inner-check") 
+                        td Lê Văn A
+                        td(class="inner-center") 
+                            img(src="assets/images/avatar.jpg" class="inner-avatar")
+                        td levana@gmail.com
+                        td 01234567890
+                        td Quản trị viên 
+                        td Giám đốc.
+                        td 
+                            .badge.badge-green Hoạt động
+                        td 
+                            .inner-buttons
+                                a(href="#" class="inner-edit")
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                a(href="#" class="inner-delete")
+                                    <i class="fa-solid fa-trash-can"></i>
+                    tr 
+                        td 
+                            input(type="checkbox" class="inner-check") 
+                        td Lê Văn A
+                        td(class="inner-center") 
+                            img(src="assets/images/avatar.jpg" class="inner-avatar")
+                        td levana@gmail.com
+                        td 01234567890
+                        td Quản trị viên 
+                        td Giám đốc.
+                        td 
+                            .badge.badge-green Hoạt động
+                        td 
+                            .inner-buttons
+                                a(href="#" class="inner-edit")
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                a(href="#" class="inner-delete")
+                                    <i class="fa-solid fa-trash-can"></i>
+                    tr 
+                        td 
+                            input(type="checkbox" class="inner-check") 
+                        td Lê Văn A
+                        td(class="inner-center") 
+                            img(src="assets/images/avatar.jpg" class="inner-avatar")
+                        td levana@gmail.com
+                        td 01234567890
+                        td Quản trị viên 
+                        td Giám đốc.
+                        td 
+                            .badge.badge-green Hoạt động
+                        td 
+                            .inner-buttons
+                                a(href="#" class="inner-edit")
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                a(href="#" class="inner-delete")
+                                    <i class="fa-solid fa-trash-can"></i>
+    //- End Section 6
+
+    //- Section 7
+    include ../partials/section-7.pug
+    //- End Section 7

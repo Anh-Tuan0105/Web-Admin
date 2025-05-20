@@ -1,0 +1,88 @@
+<!DOCTYPE html >
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tạo nhóm quyền</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  </head>
+  <body> 
+    <header class="header">
+      <div class="inner-logo"> <a href="#"><span>28</span><span>Admin </span></a></div>
+      <div class="inner-wrap"> 
+        <div class="inner-notify"> <img src="assets/images/icon-bell.svg"/><span>6</span></div>
+        <div class="inner-account">
+          <div class="inner-avatar"> <img src="assets/images/avatar.jpg"/></div>
+          <div class="inner-text"> 
+            <div class="inner-name">Le Van A</div>
+            <div class="inner-role">Admin</div>
+          </div>
+        </div>
+        <button class="inner-button-menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </header>
+    <nav class="sider">
+      <ul class="inner-menu"> 
+        <li> <a class="active" href="#"><i class="fa-solid fa-gauge-high"></i> Tổng quan</a></li>
+        <li> <a href="#"><i class="fa-solid fa-table-cells-large"></i> Quản lý danh mục</a></li>
+        <li> <a href="#"><i class="fa-solid fa-table-list"></i> Quản lý tour</a></li>
+        <li> <a href="#"><i class="fa-solid fa-list-check"></i> Quản lý đơn hàng</a></li>
+        <li> <a href="#"><i class="fa-solid fa-user"></i> Quản lý người dùng</a></li>
+        <li> <a href="#"><i class="fa-solid fa-user-group"></i> Thông tin liên hệ</a></li>
+      </ul>
+      <hr/>
+      <ul class="inner-menu"> 
+        <li> <a href="#"><i class="fa-solid fa-gear"></i> Cài đặt chung </a></li>
+        <li> <a href="#"><i class="fa-solid fa-user"></i> Thông tin cá nhân</a></li>
+        <li> <a class="inner-logout" href="#"><i class="fa-solid fa-power-off"></i> Đăng xuất </a></li>
+      </ul>
+    </nav>
+    <div class="sider-overlay"> </div>
+    <main class="main">
+      <h1 class="box-title">Tạo nhóm quyền</h1>
+      <div class="section-8"> 
+        <form>
+          <div class="inner-group">
+            <label class="inner-label" for="name">Tên nhóm quyền</label>
+            <input type="text" name="name" id="name" placeholder="Quản trị viên"/>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="description">Mô tả ngắn</label>
+            <input type="text" name="description" id="description" placeholder="Có đầy đủ các quyền"/>
+          </div>
+          <div class="inner-group"> 
+            <label class="inner-label">Phân quyền</label>
+            <div class="inner-checkbox-list"> 
+              <div class="inner-checkbox-item"> 
+                <input type="checkbox" name="permissions" id="permissions-1" value="1"/>
+                <label for="permissions-1">Xem trang Tổng quan </label>
+              </div>
+              <div class="inner-checkbox-item"> 
+                <input type="checkbox" name="permissions" id="permissions-2" value="2"/>
+                <label for="permissions-2">Xem danh mục</label>
+              </div>
+              <div class="inner-checkbox-item"> 
+                <input type="checkbox" name="permissions" id="permissions-3" value="3"/>
+                <label for="permissions-3">Tạo danh mục</label>
+              </div>
+              <div class="inner-checkbox-item"> 
+                <input type="checkbox" name="permissions" id="permissions-4" value="4"/>
+                <label for="permissions-4">Sửa danh mục</label>
+              </div>
+              <div class="inner-checkbox-item"> 
+                <input type="checkbox" name="permissions" id="permissions-5" value="5"/>
+                <label for="permissions-5">Xóa danh mục</label>
+              </div>
+            </div>
+          </div>
+          <div class="inner-button inner-two-col">
+            <button>Tạo mới</button>
+          </div>
+        </form>
+        <div class="inner-back"> <a href="#">Quay lại danh sách</a></div>
+      </div>
+    </main>
+    <script src="assets/js/script.js"> </script>
+  </body>
+</html>

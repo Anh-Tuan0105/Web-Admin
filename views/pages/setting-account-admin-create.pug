@@ -1,0 +1,45 @@
+extends ../layouts/default.pug
+
+block title 
+    title Tạo tài khoản quản trị
+block main 
+    h1.box-title Tạo tài khoản quản trị
+
+    //- Section 8
+    .section-8 
+        form
+            .inner-group
+                label(class="inner-label" for="fullname") Họ tên
+                input(type="text" name="fullname" id="fullname")
+            .inner-group
+                label(class="inner-label" for="email") Email
+                input(type="email" name="email" id="email")
+            .inner-group
+                label(class="inner-label" for="phone") Số điện thoại
+                input(type="text" name="phone" id="phone")
+            .inner-group
+                label(class="inner-label" for="role") Nhóm quyền  
+                select(name="role" id="role") 
+                    option(value="") Quản trị viên
+                    option(value="") Quản lý sản phẩm
+                    option(value="") Quản lý đơn hàng
+            .inner-group
+                label(class="inner-label" for="positionCompany") Chức vụ
+                input(type="text" name="positionCompany" id="positionCompany")
+            .inner-group
+                label(class="inner-label" for="status") Trạng thái  
+                select(name="status" id="status") 
+                    option(value="") Hoạt động
+                    option(value="") Tạm dừng
+                    option(value="") Khởi tạo
+            .inner-group
+                label(class="inner-label" for="password") Mật khẩu
+                input(type="text" name="password" id="password")
+            .inner-group.inner-two-col
+                label(class="inner-label" for="avatar") Ảnh đại diện  
+                input(type="file" name="avatar" id="avatar" accept="image/*")
+            .inner-button.inner-two-col
+                button Tạo mới
+        .inner-back 
+            a(href="#") Quay lại danh sách
+    //- End Section 8

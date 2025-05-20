@@ -1,0 +1,39 @@
+extends ../layouts/default.pug
+
+block title 
+    title Tạo nhóm quyền
+block main 
+    h1.box-title Tạo nhóm quyền
+
+    //- Section 8
+    .section-8 
+        form
+            .inner-group
+                label(class="inner-label" for="name") Tên nhóm quyền
+                input(type="text" name="name" id="name" placeholder="Quản trị viên")
+            .inner-group
+                label(class="inner-label" for="description") Mô tả ngắn
+                input(type="text" name="description" id="description" placeholder="Có đầy đủ các quyền")
+            .inner-group 
+                label(class="inner-label") Phân quyền
+                .inner-checkbox-list 
+                    .inner-checkbox-item 
+                        input(type="checkbox" name="permissions" id="permissions-1" value="1")
+                        label(for="permissions-1") Xem trang Tổng quan 
+                    .inner-checkbox-item 
+                        input(type="checkbox" name="permissions" id="permissions-2" value="2")
+                        label(for="permissions-2") Xem danh mục
+                    .inner-checkbox-item 
+                        input(type="checkbox" name="permissions" id="permissions-3" value="3")
+                        label(for="permissions-3") Tạo danh mục
+                    .inner-checkbox-item 
+                        input(type="checkbox" name="permissions" id="permissions-4" value="4")
+                        label(for="permissions-4") Sửa danh mục
+                    .inner-checkbox-item 
+                        input(type="checkbox" name="permissions" id="permissions-5" value="5")
+                        label(for="permissions-5") Xóa danh mục
+            .inner-button.inner-two-col
+                button Tạo mới
+        .inner-back 
+            a(href="#") Quay lại danh sách
+    //- End Section 8
