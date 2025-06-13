@@ -29,7 +29,7 @@ block main
                     option(value="") Khởi tạo
             .inner-group.inner-two-col
                 label(class="inner-label" for="avatar") Ảnh đại diện  
-                input(type="file" name="avatar" id="avatar" accept="image/*")
+                input(type="file" name="avatar" id="avatar" accept="image/*" filepond-image)
             .inner-group
                 label(class="inner-label") Giá cũ
                 .inner-input-list
@@ -92,7 +92,7 @@ block main
                 input(type="date" name="departure-date" id="departure-date")
             .inner-group.inner-two-col
                 label(class="inner-label" for="information") Thông tin tour  
-                textarea(name="information" id="information" placeholder="Thông tin tour...")
+                textarea(name="information" id="information" placeholder="Thông tin tour..." textarea-mce)
             .inner-group.inner-two-col 
                 label(class="inner-label") Lịch trình tour
                 .inner-schedule
@@ -107,7 +107,7 @@ block main
                                 span.inner-schedule-button.inner-more
                                     <i class="fa-solid fa-angle-down"></i>
                             .inner-schedule-body 
-                                textarea(placeholder="Nội dung chi tiết ngày 1...")
+                                textarea(placeholder="Nội dung chi tiết ngày 1..." textarea-mce)
                     div.inner-schedule-create + Thêm lich trình 
             .inner-button.inner-two-col
                 button Tạo mới

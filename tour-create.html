@@ -4,6 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Tạo tour</title>
+    <link rel="stylesheet" href="https://unpkg.com/filepond@^4/dist/filepond.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
   </head>
@@ -70,7 +72,7 @@
           </div>
           <div class="inner-group inner-two-col">
             <label class="inner-label" for="avatar">Ảnh đại diện  </label>
-            <input type="file" name="avatar" id="avatar" accept="image/*"/>
+            <input type="file" name="avatar" id="avatar" accept="image/*" filepond-image="filepond-image"/>
           </div>
           <div class="inner-group">
             <label class="inner-label">Giá cũ</label>
@@ -158,7 +160,7 @@
           </div>
           <div class="inner-group inner-two-col">
             <label class="inner-label" for="information">Thông tin tour  </label>
-            <textarea name="information" id="information" placeholder="Thông tin tour..."></textarea>
+            <textarea name="information" id="information" placeholder="Thông tin tour..." textarea-mce="textarea-mce"></textarea>
           </div>
           <div class="inner-group inner-two-col"> 
             <label class="inner-label">Lịch trình tour</label>
@@ -169,7 +171,7 @@
                     <input type="text"/><span class="inner-schedule-button inner-remove"><i class="fa-solid fa-trash-can"></i></span><span class="inner-schedule-button inner-more"><i class="fa-solid fa-angle-down"></i></span>
                   </div>
                   <div class="inner-schedule-body"> 
-                    <textarea placeholder="Nội dung chi tiết ngày 1..."></textarea>
+                    <textarea placeholder="Nội dung chi tiết ngày 1..." textarea-mce="textarea-mce"></textarea>
                   </div>
                 </div>
               </div>
@@ -183,6 +185,11 @@
         <div class="inner-back"> <a href="#">Quay lại danh sách</a></div>
       </div>
     </main>
-    <script src="assets/js/script.js"> </script>
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"> </script>
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.tiny.cloud/1/nsmwhu6gsvnt154k5eqhojpo9z0odhy17v2wy0e7xtjvw3fp/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="assets/js/tinymce-config.js">  </script>
   </body>
 </html>
