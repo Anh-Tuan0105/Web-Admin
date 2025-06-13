@@ -67,29 +67,31 @@ if (scheduleSection8) {
 // End Schedule Section 8
 
 // Filepond Image
-const filePondImage = document.querySelector("[filepond-image]");
-if (filePondImage) {
-    FilePond.registerPlugin(
-        // FilePondPluginImageExifOrientation,
-        FilePondPluginImagePreview,
-        // FilePondPluginImageCrop,
-        // FilePondPluginImageResize,
-        // FilePondPluginImageTransform,
-        // FilePondPluginImageEdit
-    );
+const listFilePondImage = document.querySelectorAll("[filepond-image]");
+if (listFilePondImage.length > 0) {
+    listFilePondImage.forEach(filePondImage => {
+        FilePond.registerPlugin(
+            // FilePondPluginImageExifOrientation,
+            FilePondPluginFileValidateType,
+            FilePondPluginImagePreview
+            // FilePondPluginImageCrop,
+            // FilePondPluginImageResize,
+            // FilePondPluginImageTransform,
+            // FilePondPluginImageEdit
+        );
 
-    FilePond.create(filePondImage, {
-        labelIdle: "+",
-        imagePreviewHeight: 150,
-        imageCropAspectRatio: '1:1',
-        imageResizeTargetWidth: 150,
-        imageResizeTargetHeight: 150,
-        stylePanelLayout: 'compact',
-        // styleLoadIndicatorPosition: 'center bottom',
-        // styleProgressIndicatorPosition: 'right bottom',
-        styleButtonRemoveItemPosition: 'right top'
-        // styleButtonProcessItemPosition: 'right bottom',
-    });
+        FilePond.create(filePondImage, {
+            labelIdle: "+",
+            imagePreviewHeight: 150,
+            imageCropAspectRatio: '1:1',
+            imageResizeTargetWidth: 150,
+            imageResizeTargetHeight: 150,
+            stylePanelLayout: 'compact',
+            // styleLoadIndicatorPosition: 'center bottom',
+            // styleProgressIndicatorPosition: 'right bottom',
+            styleButtonRemoveItemPosition: 'right top'
+            // styleButtonProcessItemPosition: 'right bottom',
+        });
+    })
 }
-
 // End Filepond Image
