@@ -576,7 +576,12 @@ textarea {
 }
 
 .section-2 .inner-chart {
-    height: 273px;
+    height: 350px;
+}
+
+.section-2 .inner-chart canvas {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 /* End Section-2 */

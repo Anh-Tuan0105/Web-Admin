@@ -95,3 +95,54 @@ if (listFilePondImage.length > 0) {
     })
 }
 // End Filepond Image
+
+// Chart 1
+const chart1 = document.querySelector("#chart1");
+if (chart1) {
+    new Chart(chart1, {
+        type: 'line',
+        data: {
+            labels: ["01", "02", "03", "04", "05"],
+            datasets: [
+                {
+                    label: "Tháng 5/2025",
+                    data: ["900000", "600000", "1300000", "1900000", "1500000"],
+                    borderColor: "#FF6384",
+                    borderWidth: 1.5
+                },
+                {
+                    label: "Tháng 4/2025",
+                    data: ["1000000", "800000", "900000", "3200000", "1800000"],
+                    borderColor: "#36A2EB",
+                    borderWidth: 1.5
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                }
+            },
+            scales: {
+                x: {
+                    display: true,
+                    title: {
+                        display: true,
+                        text: 'Ngày'
+                    }
+                },
+                y: {
+                    display: true,
+                    title: {
+                        display: true,
+                        text: 'Doanh thu (VNĐ)'
+                    }
+                }
+            },
+            maintainAspectRatio: false
+        },
+    });
+}
+// End Chart 1
